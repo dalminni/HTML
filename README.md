@@ -1,5 +1,5 @@
 # HTML-summary
-<!doctype html>
+
 <html>
   <head>
     <title>summary</title>
