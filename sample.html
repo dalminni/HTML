@@ -53,7 +53,8 @@ font : 텍스트 사이즈, 색깔, 폰트<br>
       &nbsp;&nbsp;&nbsp;&nbsp;3. pt 한글프로그램 글씨포인트  ex)&lt;font size="10pt"&gt'___&lt;&#47;font&gt;<br>
   &nbsp;&nbsp;color="": 색깔<br>
       &nbsp;&nbsp;&nbsp;&nbsp;1. red, yellow, blue 등 이름<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;2. 16진 색상코드<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;2. 16진 색상코드 / #FF00FF 형광핑크
+ <br>
   &nbsp;&nbsp;face="" : 폰트종류<br>
 <br>
 
@@ -69,6 +70,16 @@ a : 문서 링크 태그<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_top: 전체 브라우저 창에서 가장 상위의 창에서 열기<br>
   &nbsp;&nbsp;title="" : 링크 도움말<br>
 ex) &lt;a href="___" target="_blank" title="___"&gt;________&lt;&#47;a&gt;<br>
+<br>
+-해당 위치로 이동하기
+&lt;a href="#자료형과 문자"> </a>
+&lt;a name="자료형과 문자">
+<br>
+-페이지 열고 닫기
+<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">
+제목</a><div style="DISPLAY: none">
+내용
+</div>
 <br>
 title : 웹페이지 제목<br>
 &nbsp;검색엔진 웹페이지 분석 시 가장 중요한 태그<br>
@@ -126,6 +137,12 @@ tr: 행(row)<br>
 td: 열(col, 셀)<br>
   &nbsp;&nbsp;colspan="(병합할 셀의 수)"  :  가로방향 셀 병합<br>
 th: 셀 제목<br>
+border: table 테두리
+bordercolor: table 테두리 색상
+width: table 가로 크기
+height:table 세로 크기
+align: table 정렬
+bgcolor: table 배경색
   &nbsp;&nbsp;ex) &lt;table><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>___<&#47;th><br>
